@@ -1,0 +1,4172 @@
+[
+  {
+    "id": "ALG-001",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Two Sum",
+    "referenceSolution": "Use a hash map to store complement indices for O(n) time.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-002",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Longest Substring Without Repeating Characters",
+    "referenceSolution": "Sliding window with hash set maintains unique chars.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-003",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Merge k Sorted Lists",
+    "referenceSolution": "Use min\u2011heap to pull smallest head node each step (O(n log k)).",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-004",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Median of Two Sorted Arrays",
+    "referenceSolution": "Binary search on smaller array for O(log(min(m,n))).",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-005",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Kth Largest Element in an Array",
+    "referenceSolution": "Quickselect partition average O(n) time.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-006",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Maximum Subarray",
+    "referenceSolution": "Kadane\u2019s algorithm tracks running sum, O(n).",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-007",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Valid Parentheses",
+    "referenceSolution": "Stack push/pop matching brackets.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-008",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Search in Rotated Sorted Array",
+    "referenceSolution": "Modified binary search, detect sorted half.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-009",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Meeting Rooms II",
+    "referenceSolution": "Sweep line / min\u2011heap ending times.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-010",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "LRU Cache",
+    "referenceSolution": "Hash map + doubly\u2011linked list for O(1) ops.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-011",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Word Ladder",
+    "referenceSolution": "BFS with pre\u2011processed wildcard buckets.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-012",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Clone Graph",
+    "referenceSolution": "DFS/BFS with dictionary mapping old\u2192new nodes.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-013",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Top K Frequent Elements",
+    "referenceSolution": "Bucket sort or min\u2011heap of size k.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-014",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Course Schedule (detect cycle)",
+    "referenceSolution": "Topological sort via Kahn\u2019s or DFS.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-015",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Longest Increasing Subsequence",
+    "referenceSolution": "Patience sorting with binary search O(n log n).",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-016",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Serialize and Deserialize Binary Tree",
+    "referenceSolution": "Preorder traversal with null markers.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-017",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Lowest Common Ancestor BST",
+    "referenceSolution": "Iterative descent using BST property.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-018",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Binary Tree Zigzag Level Order Traversal",
+    "referenceSolution": "BFS with level parity toggle.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-019",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Add Two Numbers (linked list)",
+    "referenceSolution": "Iterate lists summing digits carry.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-020",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Reverse Nodes in k\u2011Group",
+    "referenceSolution": "Iteratively reverse k nodes using pointers.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-021",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Construct Binary Tree from Preorder/Inorder",
+    "referenceSolution": "Recursion with hashmap for index lookup.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-022",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Implement Trie",
+    "referenceSolution": "Tree of char nodes with insert/search startsWith.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-023",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Find Median from Data Stream",
+    "referenceSolution": "Two heaps (low max\u2011heap, high min\u2011heap).",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-024",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Maximal Rectangle",
+    "referenceSolution": "Histograms per row + stack.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-025",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Sliding Window Maximum",
+    "referenceSolution": "Deque storing monotonically decreasing indices.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-026",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Subarray Sum Equals K",
+    "referenceSolution": "Prefix sum hash map.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-027",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Merge Intervals",
+    "referenceSolution": "Sort intervals then merge overlaps linearly.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-028",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Longest Palindromic Substring",
+    "referenceSolution": "Expand\u2011around\u2011center or Manacher\u2019s.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-029",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "K Closest Points to Origin",
+    "referenceSolution": "Max\u2011heap of size k or quickselect.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "ALG-030",
+    "category": "algorithms",
+    "difficulty": "medium",
+    "prompt": "Jump Game",
+    "referenceSolution": "Greedy maintain farthest reachable index.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Handles edge cases; passes all unit tests including empty input and large datasets.",
+        "poor": "Fails basic test cases or unhandled null inputs."
+      },
+      {
+        "criterion": "time_complexity",
+        "weight": 0.3,
+        "excellent": "Explains and implements optimal O(n) or O(n log n) solution, justifies trade\u2011offs.",
+        "poor": "Uses unnecessary nested loops leading to O(n\u00b2)+ complexity."
+      },
+      {
+        "criterion": "space_complexity",
+        "weight": 0.1,
+        "excellent": "Keeps auxiliary space minimal / in\u2011place where possible.",
+        "poor": "Allocates unbounded collections or copies input needlessly."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable identifiers, modular functions, unit tests included.",
+        "poor": "Monolithic code, cryptic variable names."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clearly walks through approach before coding, narrates rationale.",
+        "poor": "Silent coding with no explanation."
+      }
+    ]
+  },
+  {
+    "id": "SYS-001",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design a URL shortener like bit.ly",
+    "referenceSolution": "Outline components: API, hash generator, DB storing mappings, caching, redirect service, analytics.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-002",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design Pastebin",
+    "referenceSolution": "Text storage, unique URL, DB vs blob, syntax highlight, expiration, abuse mitigation.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-003",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design Uber ride matching service",
+    "referenceSolution": "Microservices: dispatch, geohash driver locations, Kafka streams, ETA calc.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-004",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design Twitter timeline",
+    "referenceSolution": "Fan\u2011out vs pull, caching, user graph sharding.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-005",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design scalable chat service (WhatsApp)",
+    "referenceSolution": "WebSocket gateways, message queues, persistence, offline storage.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-006",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design IoT telemetry pipeline (150K msgs/sec)",
+    "referenceSolution": "MQTT brokers, Kafka ingestion, time\u2011series DB, processing workers.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-007",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design Dropbox file storage",
+    "referenceSolution": "Chunking, metadata store, S3, deduplication, sync protocol.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-008",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design video streaming platform",
+    "referenceSolution": "Upload service, transcoding pipeline, CDN, adaptive bitrate.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-009",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design e\u2011commerce recommendation system",
+    "referenceSolution": "Batch/stream features, candidate generation, ranking ML, feature store.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-010",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design API rate limiter",
+    "referenceSolution": "Token bucket per key using Redis.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-011",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design multiplayer gaming backend",
+    "referenceSolution": "State synchronization, matchmaking, authoritative physics server.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-012",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design collaborative document editor (Google Docs)",
+    "referenceSolution": "Operational transforms/CRDT, presence, conflict resolution.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-013",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design centralized logging system",
+    "referenceSolution": "Log collectors, Elasticsearch, Kibana dashboards, retention.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-014",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design search autocomplete",
+    "referenceSolution": "Prefix trie in memory, ML ranking, caching.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-015",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design notification service",
+    "referenceSolution": "Fan\u2011out email/push/SMS, retries, user preferences.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-016",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design parking lot system (OO design)",
+    "referenceSolution": "Classes for Vehicle, Slot, Ticket; price calc.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-017",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design airline booking system",
+    "referenceSolution": "Seat inventory service, payment, global distribution, eventual consistency.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-018",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design payment processing system",
+    "referenceSolution": "PCI compliance, idempotency, ledger, fraud detection.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-019",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design content delivery network",
+    "referenceSolution": "Edge pops, origin shield, cache invalidation.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "SYS-020",
+    "category": "system_design",
+    "difficulty": "hard",
+    "prompt": "Design warehouse inventory management",
+    "referenceSolution": "RFID scanning, event sourcing, stock vs orders projections.",
+    "rubric": [
+      {
+        "criterion": "architecture",
+        "weight": 0.3,
+        "excellent": "Presents clear high\u2011level diagram including major components, APIs, data flow.",
+        "poor": "Jumps into details without cohesive architecture."
+      },
+      {
+        "criterion": "scalability",
+        "weight": 0.2,
+        "excellent": "Identifies expected load, calculates QPS, proposes horizontal scaling & caching.",
+        "poor": "Ignores traffic growth, single\u2011instance mindset."
+      },
+      {
+        "criterion": "data_consistency",
+        "weight": 0.2,
+        "excellent": "Chooses appropriate storage, explains consistency vs availability trade\u2011offs.",
+        "poor": "No mention of data model or consistency."
+      },
+      {
+        "criterion": "fault_tolerance",
+        "weight": 0.2,
+        "excellent": "Addresses replication, retries, monitoring, graceful degradation.",
+        "poor": "System has single points of failure."
+      },
+      {
+        "criterion": "tradeoffs",
+        "weight": 0.1,
+        "excellent": "Compares alternatives, justifies decisions under constraints.",
+        "poor": "Presents one design as only option."
+      }
+    ]
+  },
+  {
+    "id": "DOT-001",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Difference between IEnumerable<T> and IQueryable<T>",
+    "referenceSolution": "IEnumerable executes in\u2011memory; IQueryable builds expression trees executed by provider (e.g., EF) enabling deferred, server\u2011side queries.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-002",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Explain async/await state machine",
+    "referenceSolution": "Compiler transforms async method into state machine struct capturing context to resume upon awaited Task completion.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-003",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "How does .NET garbage collector work?",
+    "referenceSolution": "Generational GC with mark\u2011and\u2011sweep/compact, 0/1/2 generations, LOH, background/ephemeral collections.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-004",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Dependency Injection in ASP.NET Core",
+    "referenceSolution": "Built\u2011in IoC container registers services with lifetimes (Transient/Scoped/Singleton) injected via constructor.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-005",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Use cases of yield return",
+    "referenceSolution": "Creates iterator state machine, enables lazy evaluation without allocating full collection.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-006",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Covariance and contravariance in generics",
+    "referenceSolution": "out T allows covariance for return types; in T contravariance for params.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-007",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Task vs ValueTask vs Thread",
+    "referenceSolution": "Task represents async operation, can wrap ThreadPool; ValueTask avoids allocation for sync results; Thread is actual OS thread.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-008",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Explain Span<T> / Memory<T>",
+    "referenceSolution": "Stack\u2011only, memory\u2011safe view over contiguous memory; zero\u2011copy slicing for performance.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-009",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Difference between record and class",
+    "referenceSolution": "Record provides value\u2011based equality, immutability, with\u2011expressions, deconstruction.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-010",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "ASP.NET Core middleware pipeline",
+    "referenceSolution": "Request delegates executed sequentially; can short\u2011circuit; built via app.Use/Run.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-011",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "Entity tracking in EF Core",
+    "referenceSolution": "ChangeTracker monitors entity states Added/Modified/etc., generates SQL on SaveChanges.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-012",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "CancellationToken usage",
+    "referenceSolution": "Propagates cancellation across async operations, register callbacks.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-013",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "ref vs out parameters",
+    "referenceSolution": "Both pass by reference; ref requires initialized, out must be assigned before return.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-014",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": ".NET JIT optimizations",
+    "referenceSolution": "Tiered compilation, inlining, loop unrolling, PGO in .NET 8.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "DOT-015",
+    "category": "dotnet",
+    "difficulty": "medium",
+    "prompt": "IDisposable pattern best practices",
+    "referenceSolution": "Implement Dispose(bool) pattern, suppress finalization, use IAsyncDisposable for async cleanup.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Gives accurate technical explanation with example code.",
+        "poor": "States factually incorrect information."
+      },
+      {
+        "criterion": "depth_of_explanation",
+        "weight": 0.3,
+        "excellent": "Demonstrates deep understanding of CLR internals or language feature.",
+        "poor": "Superficial answer."
+      },
+      {
+        "criterion": "practical_examples",
+        "weight": 0.1,
+        "excellent": "Relates concept to real\u2011world .NET project usage.",
+        "poor": "No example usage."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Sample code is idiomatic and concise.",
+        "poor": "Uncompilable or anti\u2011patterns."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Structured, uses terminology correctly.",
+        "poor": "Rambling or confusing."
+      }
+    ]
+  },
+  {
+    "id": "SQL-001",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "INNER JOIN vs LEFT JOIN",
+    "referenceSolution": "INNER returns matching rows; LEFT includes unmatched from left table; use based on need.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-002",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Second highest salary per department",
+    "referenceSolution": "Use ROW_NUMBER() partitioned by dept ordered DESC and filter RowNumber = 2.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-003",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Normalization forms",
+    "referenceSolution": "1NF eliminates repeating groups, 2NF removes partial dependencies, 3NF eliminates transitive.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-004",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "ACID properties",
+    "referenceSolution": "Atomicity, Consistency, Isolation, Durability ensure reliable transactions.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-005",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Slowly Changing Dimension Type 2",
+    "referenceSolution": "Keep history by inserting new row with surrogate key and effective dates.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-006",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Clustered vs Non\u2011clustered index",
+    "referenceSolution": "Clustered sorts physical data; only one; Non\u2011clustered separate structure pointing to rows.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-007",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Detect and resolve deadlocks",
+    "referenceSolution": "Use DMVs to find blocking sessions; design consistent lock order, lower isolation, retry logic.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-008",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Window functions",
+    "referenceSolution": "OVER clause for ranking, aggregates without collapsing rows.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-009",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Partitioning vs Sharding",
+    "referenceSolution": "Partitioning splits table within DB; sharding distributes across servers.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-010",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Running total query",
+    "referenceSolution": "SUM(amount) OVER (ORDER BY date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW).",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-011",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "OLTP vs OLAP",
+    "referenceSolution": "OLTP: transactional, normalized; OLAP: analytical, denormalized.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-012",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Change Data Capture (CDC)",
+    "referenceSolution": "SQL Server feature records insert/update/delete to capture incremental changes.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-013",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "CAP theorem",
+    "referenceSolution": "Consistency, Availability, Partition tolerance; trade\u2011offs in distributed systems.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-014",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Design ETL 1TB daily",
+    "referenceSolution": "Ingest via batch pipeline, parallelization, staging, partitioning, incremental loads.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "SQL-015",
+    "category": "sql",
+    "difficulty": "medium",
+    "prompt": "Pivot rows to columns",
+    "referenceSolution": "Use PIVOT operator or conditional aggregation with CASE.",
+    "rubric": [
+      {
+        "criterion": "correctness",
+        "weight": 0.4,
+        "excellent": "Returns right results, handles NULLs, duplicates.",
+        "poor": "Incorrect query or syntax errors."
+      },
+      {
+        "criterion": "performance",
+        "weight": 0.2,
+        "excellent": "Uses proper indexes, avoids full scans where avoidable.",
+        "poor": "Inefficient plan/ Cartesian joins."
+      },
+      {
+        "criterion": "data_modeling",
+        "weight": 0.2,
+        "excellent": "Shows understanding of schema design & normalization.",
+        "poor": "Ignores data integrity."
+      },
+      {
+        "criterion": "code_quality",
+        "weight": 0.1,
+        "excellent": "Readable aliases, CTEs, comments.",
+        "poor": "Obscure or redundant SQL."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Explains step by step; references execution plan.",
+        "poor": "No explanation."
+      }
+    ]
+  },
+  {
+    "id": "BEH-001",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Disagreed with a team decision",
+    "referenceSolution": "Describe context, how you voiced concerns, reached alignment, outcome.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-002",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Led team through tight deadline",
+    "referenceSolution": "Planning, delegation, risk mitigation, delivered on time.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-003",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Handled project failure",
+    "referenceSolution": "Own mistakes, corrective action, learned for future.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-004",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Mentored junior engineer",
+    "referenceSolution": "Regular 1:1s, coding sessions, measured their growth.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-005",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Resolved conflict between peers",
+    "referenceSolution": "Mediated discussion, focused on common goals.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-006",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Managed ambiguous requirements",
+    "referenceSolution": "Clarified via prototypes, stakeholder interviews.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-007",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Prioritized tasks with limited resources",
+    "referenceSolution": "Used impact vs effort matrix, communicated tradeoffs.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-008",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Introduced innovative solution",
+    "referenceSolution": "Proposed automation saving 30% deployment time.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-009",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Influenced without authority",
+    "referenceSolution": "Built relationships, presented data\u2011driven proposal.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-010",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Improved a process",
+    "referenceSolution": "Streamlined CI pipeline, 40% faster builds.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-011",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Faced ethical dilemma",
+    "referenceSolution": "Chose data privacy over quick release, explained rationale.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-012",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Balanced quality and speed",
+    "referenceSolution": "Implemented feature flags to ship incremental value.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-013",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Decision with incomplete data",
+    "referenceSolution": "Made assumption, monitored metrics, iterated.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-014",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Received critical feedback",
+    "referenceSolution": "Listened, created action plan, tracked improvement.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-015",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Cross\u2011functional collaboration",
+    "referenceSolution": "Coordinated with design and QA to align sprint goals.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-016",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Led change initiative",
+    "referenceSolution": "Migrated monolith to microservices, guided team.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-017",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Motivated team morale",
+    "referenceSolution": "Celebrated wins, transparent communication.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-018",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Negotiated scope with PM",
+    "referenceSolution": "Reduced MVP scope while meeting deadline.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-019",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Worked in diverse team",
+    "referenceSolution": "Leveraged varied perspectives for better design.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "BEH-020",
+    "category": "behavioral",
+    "difficulty": "easy",
+    "prompt": "Kept team updated with new tech",
+    "referenceSolution": "Organized monthly knowledge\u2011share sessions.",
+    "rubric": [
+      {
+        "criterion": "situation_task",
+        "weight": 0.2,
+        "excellent": "Sets concise context incl. team, objective, constraints.",
+        "poor": "Vague or missing context."
+      },
+      {
+        "criterion": "actions",
+        "weight": 0.3,
+        "excellent": "Describes specific, proactive steps taken personally.",
+        "poor": "Speaks only about team, not personal contribution."
+      },
+      {
+        "criterion": "results",
+        "weight": 0.3,
+        "excellent": "Quantifies impact (e.g., 25% faster release).",
+        "poor": "No clear outcome or metrics."
+      },
+      {
+        "criterion": "reflection",
+        "weight": 0.2,
+        "excellent": "Shares lesson learned & how applied later.",
+        "poor": "No reflection."
+      }
+    ]
+  },
+  {
+    "id": "DEV-001",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Continuous Integration",
+    "referenceSolution": "Automated build & test on every commit to detect issues early.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-002",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Blue\u2011green deployment",
+    "referenceSolution": "Maintain two production environments; switch traffic for zero\u2011downtime releases.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-003",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Unit testing DB access code",
+    "referenceSolution": "Use repository pattern with in\u2011memory DB or mocks.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-004",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Mocks vs Stubs",
+    "referenceSolution": "Mocks assert interactions; stubs provide canned responses.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-005",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Containerization & Docker",
+    "referenceSolution": "Package app with dependencies for portability, isolation.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-006",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Infrastructure as Code",
+    "referenceSolution": "Provision cloud resources via scripts e.g., Terraform, ARM.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-007",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Canary release",
+    "referenceSolution": "Gradually roll out to subset users, monitor before full rollout.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-008",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Test\u2011driven development",
+    "referenceSolution": "Write failing test first, then code to pass, refactor.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-009",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Monitoring in production",
+    "referenceSolution": "Use metrics, logs, tracing, alerts; tools Grafana, Prometheus.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  },
+  {
+    "id": "DEV-010",
+    "category": "devops",
+    "difficulty": "easy",
+    "prompt": "Semantic versioning",
+    "referenceSolution": "MAJOR.MINOR.PATCH reflects breaking changes, features, fixes.",
+    "rubric": [
+      {
+        "criterion": "concept_understanding",
+        "weight": 0.3,
+        "excellent": "Explains concept accurately incl. purpose & benefits.",
+        "poor": "Misconceptions or buzzwords only."
+      },
+      {
+        "criterion": "practical_application",
+        "weight": 0.3,
+        "excellent": "Describes implementation steps / commands.",
+        "poor": "No idea how to apply."
+      },
+      {
+        "criterion": "tooling",
+        "weight": 0.2,
+        "excellent": "Mentions appropriate tools (e.g., Docker, GitHub Actions).",
+        "poor": "No concrete tools."
+      },
+      {
+        "criterion": "best_practices",
+        "weight": 0.1,
+        "excellent": "Discusses security, rollback, version control.",
+        "poor": "Ignores risks, shortcuts processes."
+      },
+      {
+        "criterion": "communication",
+        "weight": 0.1,
+        "excellent": "Clear, structured answer.",
+        "poor": "Disorganized explanation."
+      }
+    ]
+  }
+]
