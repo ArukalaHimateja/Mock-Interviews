@@ -9,10 +9,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.16" PrivateAssets="all" />
-    <PackageReference Include="MudBlazor" Version="7.1.0" />
-    <PackageReference Include="Refit" Version="7.2.0" />
+    <PackageReference Include="MudBlazor" Version="7.1.0" ExcludeAssets="analyzers" PrivateAssets="all" />
+    <PackageReference Include="Refit" Version="8.0.0" />
     <PackageReference Include="Blazored.LocalStorage" Version="4.3.0" />
-    <PackageReference Include="BlazorMonaco" Version="2.5.0" />
+    <PackageReference Include="BlazorMonaco" Version="3.3.0" />
   </ItemGroup>
 
 </Project>
