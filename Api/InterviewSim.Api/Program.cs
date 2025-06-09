@@ -41,6 +41,7 @@ builder.Services.AddSingleton<IOpenAIClient, OpenAIClientAdapter>();
 builder.Services.AddSingleton(_ => new BlobServiceClient(
     builder.Configuration.GetConnectionString("Storage") ?? "UseDevelopmentStorage=true"));
 builder.Services.AddSingleton<IGradingService, GradingService>();
+builder.Services.AddSingleton<IPdfReportService, PdfReportService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>

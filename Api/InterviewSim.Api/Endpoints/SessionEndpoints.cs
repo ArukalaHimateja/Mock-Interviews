@@ -1,5 +1,4 @@
 using System.Security.Claims;
-using Azure.Storage.Blobs;
 using InterviewSim.Core.Data;
 using InterviewSim.Core.Dtos;
 using InterviewSim.Core.Entities;
@@ -67,9 +66,15 @@ public static class SessionEndpoints
             return Results.Ok(new { feedback = (string?)null, nextQuestion = next });
         });
 
-        group.MapGet("/{id:guid}/report", (Guid id, BlobServiceClient blobClient) =>
+        group.MapGet("/{id:guid}/report", async (Guid id, InterviewSimContext db, IPdfReportService pdf) =>
         {
-            var url = $"https://example.com/reports/{id}.pdf";
+            var session = await db.InterviewSessions
+                .Include(s => s.User)
+                .Include(s => s.QuestionResponses)
+                .FirstOrDefaultAsync(s => s.Id == id);
+            if (session == null) return Results.NotFound();
+
+            var url = await pdf.GenerateReportAsync(session);
             return Results.Ok(new { url });
         });
 
