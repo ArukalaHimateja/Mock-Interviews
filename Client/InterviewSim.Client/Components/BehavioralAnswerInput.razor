@@ -1,0 +1,82 @@
+@inject IJSRuntime JS
+
+<MudTextField @bind-Value="_text" Lines="5" Class="w-100" />
+<MudButton OnClick="ToggleRecording" Variant="Variant.Filled" Color="Color.Primary" Class="mt-2">
+    @_recording ? "Stop" : "Record"
+</MudButton>
+
+@code {
+    [Parameter] public string Value { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> ValueChanged { get; set; }
+
+    private string _text
+    {
+        get => Value;
+        set
+        {
+            if (Value != value)
+            {
+                Value = value;
+                ValueChanged.InvokeAsync(value);
+            }
+        }
+    }
+
+    private IJSObjectReference? _module;
+    private DotNetObjectReference<BehavioralAnswerInput>? _dotNetRef;
+    private bool _recording;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _module = await JS.InvokeAsync<IJSObjectReference>("import", "./js/stt.js");
+        }
+    }
+
+    private async Task ToggleRecording()
+    {
+        if (_module == null) return;
+
+        if (!_recording)
+        {
+            _dotNetRef = DotNetObjectReference.Create(this);
+            await _module.InvokeVoidAsync("start", _dotNetRef);
+        }
+        else
+        {
+            await _module.InvokeVoidAsync("stop");
+        }
+    }
+
+    [JSInvokable]
+    public Task OnStart()
+    {
+        _recording = true;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public Task OnEnd()
+    {
+        _recording = false;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public Task OnResult(string text)
+    {
+        _text = text;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public Task OnError(string error)
+    {
+        Console.Error.WriteLine(error);
+        return Task.CompletedTask;
+    }
+}
