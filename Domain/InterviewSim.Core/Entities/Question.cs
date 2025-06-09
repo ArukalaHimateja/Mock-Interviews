@@ -1,9 +1,14 @@
+using System.Collections.Generic;
+
 namespace InterviewSim.Core.Entities;
 
-public record Question(
-    string Id,
-    string Category,
-    string Difficulty,
-    string Prompt,
-    string? ReferenceSolution,
-    IReadOnlyList<RubricCriterion> Rubric);
+public class Question
+{
+    public string Id { get; set; } = null!;
+    public string Category { get; set; } = null!;
+    public string Difficulty { get; set; } = null!;
+    public string Prompt { get; set; } = null!;
+    public string? ReferenceSolution { get; set; }
+
+    public List<RubricCriterion> Rubric { get; set; } = new();
+}
