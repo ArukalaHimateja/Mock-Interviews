@@ -11,5 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\InterviewSim.Core\InterviewSim.Core.csproj" />
+    <ProjectReference Include="..\..\Api\InterviewSim.Api\InterviewSim.Api.csproj" />
   </ItemGroup>
 </Project>
