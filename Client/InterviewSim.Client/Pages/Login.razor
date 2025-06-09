@@ -1,0 +1,22 @@
+@page "/login"
+@inject IAuthApi Auth
+@inject Blazored.LocalStorage.ILocalStorageService Storage
+@inject NavigationManager Nav
+
+<MudPaper Class="pa-4" Width="300px">
+    <MudTextField @bind-Value="_email" Label="Email" Required="true" />
+    <MudTextField @bind-Value="_password" Label="Password" InputType="InputType.Password" Required="true" />
+    <MudButton OnClick="LoginAsync" Color="Color.Primary" Variant="Variant.Filled" Class="mt-2">Login</MudButton>
+</MudPaper>
+
+@code {
+    private string _email = string.Empty;
+    private string _password = string.Empty;
+
+    private async Task LoginAsync()
+    {
+        var resp = await Auth.Login(new LoginRequest(_email, _password));
+        await Storage.SetItemAsync("token", resp.Token);
+        Nav.NavigateTo("/interview");
+    }
+}

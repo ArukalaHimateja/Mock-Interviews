@@ -1,0 +1,14 @@
+@using InterviewSim.Core.Dtos
+@inherits LayoutComponentBase
+<div class="question-card">
+    <MudCard>
+        <MudCardContent>
+            <MudText Typo="Typo.subtitle1">@Question?.Category (@Question?.Difficulty)</MudText>
+            <MudText>@Question?.Prompt</MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+@code {
+    [Parameter] public QuestionDto? Question { get; set; }
+}

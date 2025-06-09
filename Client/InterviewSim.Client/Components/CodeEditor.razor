@@ -1,0 +1,7 @@
+@using BlazorMonaco
+<MonacoEditor Height="300px" @bind-Value="Code" Language="csharp" />
+
+@code {
+    [Parameter] public string Code { get; set; } = string.Empty;
+    [Parameter] public EventCallback<string> CodeChanged { get; set; }
+}

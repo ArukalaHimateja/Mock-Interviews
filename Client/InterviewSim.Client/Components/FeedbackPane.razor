@@ -1,0 +1,10 @@
+@if (!string.IsNullOrWhiteSpace(Feedback))
+{
+    <MudPaper Class="pa-2 mt-2">
+        <MudText>@Feedback</MudText>
+    </MudPaper>
+}
+
+@code {
+    [Parameter] public string? Feedback { get; set; }
+}

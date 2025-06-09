@@ -1,0 +1,27 @@
+<MudText>@_remaining</MudText>
+
+@code {
+    [Parameter] public int Seconds { get; set; }
+    private int _remaining;
+    private System.Timers.Timer? _timer;
+
+    protected override void OnInitialized()
+    {
+        _remaining = Seconds;
+        _timer = new System.Timers.Timer(1000);
+        _timer.Elapsed += (_, _) =>
+        {
+            if (_remaining > 0)
+            {
+                _remaining--;
+                InvokeAsync(StateHasChanged);
+            }
+        };
+        _timer.Start();
+    }
+
+    public void Dispose()
+    {
+        _timer?.Dispose();
+    }
+}
