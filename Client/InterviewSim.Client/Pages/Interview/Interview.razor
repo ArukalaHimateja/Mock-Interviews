@@ -1,0 +1,24 @@
+@page "/interview"
+@inject IQuestionApi QuestionsApi
+@using InterviewSim.Core.Dtos
+
+@if (_questions == null)
+{
+    <MudProgressCircular Indeterminate="true" />
+}
+else
+{
+    foreach (var q in _questions)
+    {
+        <QuestionCard Question="q" />
+    }
+}
+
+@code {
+    private List<QuestionDto>? _questions;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _questions = await QuestionsApi.GetSampleQuestions();
+    }
+}
