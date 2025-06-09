@@ -37,10 +37,10 @@ builder.Services.AddSingleton(_ => new StripeClient(builder.Configuration["Strip
 builder.Services.AddSingleton(_ => new OpenAIClient(
     new Uri(builder.Configuration["OpenAI:Endpoint"] ?? "http://localhost"),
     new AzureKeyCredential(builder.Configuration["OpenAI:ApiKey"] ?? string.Empty)));
+builder.Services.AddSingleton<IOpenAIClient, OpenAIClientAdapter>();
 builder.Services.AddSingleton(_ => new BlobServiceClient(
     builder.Configuration.GetConnectionString("Storage") ?? "UseDevelopmentStorage=true"));
-
-builder.Services.AddSingleton<IGradingService, DummyGradingService>();
+builder.Services.AddSingleton<IGradingService, GradingService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
