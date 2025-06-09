@@ -1,8 +1,17 @@
+using System;
+using System.Collections.Generic;
+
 namespace InterviewSim.Core.Entities;
 
-public record InterviewSession(
-    Guid Id,
-    Guid UserId,
-    DateTimeOffset StartedAt,
-    DateTimeOffset? CompletedAt,
-    IReadOnlyList<QuestionResponse> Responses);
+public class InterviewSession
+{
+    public Guid Id { get; set; }
+    public Guid UserId { get; set; }
+    public DateTime StartedUtc { get; set; }
+    public DateTime? EndedUtc { get; set; }
+    public string Track { get; set; } = null!;
+    public string Difficulty { get; set; } = null!;
+
+    public User User { get; set; } = null!;
+    public List<QuestionResponse> QuestionResponses { get; set; } = new();
+}
